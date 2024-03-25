@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/title-icon.png">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll("a");
+        navLinks.forEach(link => {
+            link.addEventListener("click", function(e) {          
+                navLinks.forEach(link => {
+                    link.classList.remove("active");
+                });    
+                this.classList.add("active");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+       <nav class="navigation">
+            <div class="div-pf">
+                <div class="pf-h1">
+                    <a href="#home"><h1><span class="h1-s">My Port</span><span class="span-h1">folio</span></h1></a>
+                </div>
+                <div class="pf-ul">
+                    <ul class="ul-nav">
+                        <li><a class="a-home" href="#home">Home</a></li>
+                        <li><a class="a-about" href="#about">About</a></li>
+                        <li><a class="a-hobbies" href="#hobbies">Hobbies</a></li>
+                    </ul>
+                </div>
+            </div>
+       </nav>
+    </header>
+    
+    <section id="home" class="section-home">
+        <div class="content">
+            <h1>Hi I'm</h1>
+            <h3>Mark Alexander Manalastas</h3>
+            <p>A Future Web Developer building the Interface of Websites that leads to the success of the overall product. </p>
+            </div>
+        </div>
+        <div class="me">
+            <img src="/images/-dd6076.jpg" alt="">
+        </div>
+        
+    </section>
+    <section id="about" class="section-about">
+        <div class="container-about">
+            <h1>ABOUT ME</h1>
+            <p>I am twenty years old and I live in San Jose San Luis Pampanga, I am a student of DHVSU Candaba Campus and I am in 2nd year, I took IT because I see on the internet that they pay a lot as a web developer. when I was a child I always hang out at our nearby computer shop, I hope one day I will succeed in my chosen course.</p>
+        </div><br><br>
+        <div class="about-img">
+            <img class="aboutme1" src="/images/aboutme1.jpeg" alt="">
+            <img class="aboutme2" src="images/aboutme2.jpg" alt="">
+            <img class="aboutme3" src="images/aboutme3.jpg" alt="">
+        </div>
+    </section>
+    <section id="hobbies" class="section-hobbies">
+        <div class="div-hobbies">
+            <h1>My Hobbies</h1>
+            <div class="myhobbies">
+              <img src="/images/hobbies1.jpeg" alt="">
+              <img src="/images/hobbies2.jpeg" alt="">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+                <h1>1.Gaming has sharpened my strategic thinking, problem-solving abilities, and decision-making skills. It challenges me to adapt to different scenarios, think critically, and find innovative solutions to overcome obstacles.</h1>
+                <h1>2.Basketball, I've honed essential skills such as teamwork, leadership, discipline, and physical fitness. It has taught me the value of perseverance, resilience, and the importance of a strong work ethic both on and off the court.</h1>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
